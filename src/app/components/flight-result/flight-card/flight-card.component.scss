@@ -1,0 +1,84 @@
+.flight-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 1.5rem;
+}
+
+.flight-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #4a90e2;
+  padding: 4px;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #4a90e2;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4c4c4c;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  font-size: 0.875rem;
+  color: #555;
+  margin: 0;
+}
+
+
+.airport-name {
+  font-size: 12px;
+}
+
+@media (max-width: 992px) {
+  .flight-card .row {
+    flex-wrap: wrap;
+  }
+
+  .arrow-container {
+    display: none;
+  }
+
+  .flight-card .col {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .flight-card {
+    padding: 1.5rem;
+  }
+
+  .flight-card .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-auto img {
+    margin-bottom: 1rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}

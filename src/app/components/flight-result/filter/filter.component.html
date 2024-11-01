@@ -1,0 +1,46 @@
+<div class="filter-sidebar">
+  <h5>Filter Flights</h5>
+
+  <div class="filter-group">
+    <label for="airline">Airline</label>
+    <select id="airline" [(ngModel)]="filters.airline">
+      <option value="">All Airlines</option>
+      <option *ngFor="let airline of airlines" [value]="airline">{{ airline }}</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="transit">Transit Options</label>
+    <select id="transit" [(ngModel)]="filters.isTransit">
+      <option value="">All Options</option>
+      <option value="yes">With Transit</option>
+      <option value="no">Without Transit</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label for="depatureAirportName">Depature Airport Name</label>
+    <input
+      type="text"
+      id="depatureAirportName"
+      [(ngModel)]="filters.depatureAirportName"
+      placeholder="Enter Depature Airport Name"
+      (keypress)="restrictArabic($event)"
+    />
+    <small *ngIf="errorMessage" class="error-message">{{ errorMessage }}</small>
+  </div>
+  <div class="filter-group">
+    <label for="arrivalAirportName">Arrival Airport Name</label>
+    <input
+      type="text"
+      id="arrivalAirportName"
+      [(ngModel)]="filters.arrivalAirportName"
+      placeholder="Enter Arrival Airport Name"
+      (keypress)="restrictArabic($event)"
+    />
+    <small *ngIf="errorMessage" class="error-message">{{ errorMessage }}</small>
+  </div>
+
+  <!-- Filter Button -->
+  <button class="btn btn-primary" (click)="applyFilters()">Apply Filters</button>
+</div>
+

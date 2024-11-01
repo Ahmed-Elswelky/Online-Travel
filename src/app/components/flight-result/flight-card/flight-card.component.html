@@ -1,0 +1,43 @@
+
+<div class="card p-3 flight-card">
+  <div class="row align-items-center" (click)="onFlightCardClick(flight.sequenceNum)">
+    <!-- Circular Logo Image -->
+    <div class="col-auto">
+      <img [src]="flight.allJourney.flights[0].flightAirline.airlineLogo" class="rounded-circle logo-img" alt="logo">
+    </div>
+
+    <!-- Text in Five Columns -->
+    <div class="col">
+      <div class="row align-items-center">
+        <div class="col">
+          <h6>{{flight.allJourney.flights[0].flightAirline.alternativeBusinessName}}</h6>
+          <p>{{flight.allJourney.flights[0].flightAirline.airlineCode}} - {{flight.allJourney.flights[0].flightDTO[0].flightInfo.flightNumber}}</p>
+        </div>
+        <div class="col">
+          <h6>{{flight.allJourney.flights[0].flightDTO[0].departureDate | date:'dd/MM/yyyy'}}</h6>
+          <p>{{flight.allJourney.flights[0].flightDTO[0].departureDate | date:'hh:mm a' }}</p>
+          <p>{{flight.allJourney.flights[0].flightDTO[0].departureTerminalAirport.cityName}}, <span class="airport-name">{{flight.allJourney.flights[0].flightDTO[0].departureTerminalAirport.airportName}}</span></p>
+        </div>
+        <div class="arrow-container col-1">
+          <span class="arrow">&#8594;</span>
+        </div>
+        <div class="col">
+          <h6>{{flight.allJourney.flights[0].flightDTO[0].arrivalDate | date:'dd/MM/yyyy'}}</h6>
+          <p>{{flight.allJourney.flights[0].flightDTO[0].arrivalDate | date:'hh:mm a'}}</p>
+          <p>{{flight.allJourney.flights[0].flightDTO[0].arrivalTerminalAirport.cityName}}, <span class="airport-name">{{flight.allJourney.flights[0].flightDTO[0].arrivalTerminalAirport.airportName}}</span></p>
+        </div>
+        <div class="col">
+          <h6>{{flight.totalDuration | mintueToHour}}</h6>
+          <p *ngIf="flight.allJourney.flights[0].flightDTO.length > 1">With Transit</p>
+          <p *ngIf="flight.allJourney.flights[0].flightDTO.length == 1">Direct Flight</p>
+        </div>
+        <div class="col">
+          <h6>{{(flight.itinTotalFare.amount + flight.itinTotalFare.totalTaxes).toFixed(2) + " "}}{{flight.itinTotalFare.currencyCode}}</h6>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary btn-sm">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

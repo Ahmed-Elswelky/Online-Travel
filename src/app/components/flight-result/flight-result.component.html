@@ -1,0 +1,28 @@
+<div class="flight-results my-3">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center mb-5">Flight Results</h1>
+
+      <div class="col-md-3">
+        <app-filter
+          [airlines]="airlinesList"
+          (filtersChanged)="onFiltersChanged($event)"
+        ></app-filter>
+      </div>
+
+
+      <div class="col-md-9">
+        <div class="row">
+          <div *ngIf="filteredFlights.length === 0" class="text-center w-100">
+            <h3>Sorry, No flights available right now</h3>
+            <h4>Try choosing different filters</h4>
+          </div>
+
+          <app-flight-card *ngFor="let flight of filteredFlights" [flight]="flight"></app-flight-card>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+

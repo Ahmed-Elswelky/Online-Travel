@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-primary {
+  background-color: #4a90e2;
+  border: none;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+.btn-secondary {
+  border: none;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #357abd;
+}

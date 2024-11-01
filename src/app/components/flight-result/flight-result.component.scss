@@ -1,0 +1,25 @@
+.flight-results {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-flight-filter {
+  padding: 1rem;
+  background-color: #f8f9fa; /* Light background for sidebar */
+  border-right: 1px solid #e0e0e0; /* Optional border to separate sidebar */
+}
+
+.app-flight-card {
+  margin-bottom: 1.5rem; /* Space between cards */
+}
+
+@media screen and (max-width: 1200px){
+  .col-md-3 , .col-md-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
