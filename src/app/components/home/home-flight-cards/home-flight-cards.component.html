@@ -1,0 +1,7 @@
+
+<div class="row">
+  <p class="title">Popular Flights</p>
+  <div class="col-md-4" *ngFor="let flight of flights">
+    <app-home-flight-card  [flight]="flight"/>
+  </div>
+</div>

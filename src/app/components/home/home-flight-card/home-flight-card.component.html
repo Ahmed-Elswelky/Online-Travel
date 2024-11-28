@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
+    <img [src]="flight.imgUrl" class="img-fluid"/>
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{flight.title}}</h5>
+    <p class="card-text">{{flight.description}}</p>
+    <a routerLink="/flights" class="btn btn-primary">Show All Flights</a>
+  </div>
+</div>

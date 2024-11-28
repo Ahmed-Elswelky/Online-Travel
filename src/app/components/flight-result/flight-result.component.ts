@@ -11,6 +11,7 @@ export class FlightResultComponent {
   airItinerary: IAirItinerary[];
   airlinesList: string[];
   filteredFlights: IAirItinerary[];
+  p: number = 1;
 
   constructor() {
     this.airItinerary = flightsResults.airItineraries

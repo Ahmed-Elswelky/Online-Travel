@@ -1,0 +1,22 @@
+.card {
+  min-height: 30em;
+  margin-bottom: 2em;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card img {
+  height: 15em;
+  object-fit: cover;
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    min-height: 33em;
+  }
+
+}
+

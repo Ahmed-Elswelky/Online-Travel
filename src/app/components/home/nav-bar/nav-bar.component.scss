@@ -1,0 +1,134 @@
+.navbar {
+  height: 10vh;
+}
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+  }
+  .navbar-collapse {
+    background-color: #fff; /* Add background color for collapsible menu */
+    border-top: 1px solid #ddd;
+  }
+  .navbar-light {
+    background-color: #f8f9fa;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .navbar-nav .nav-link.active {
+    color: #4a90e2;
+  }
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #navbarSupportedContent {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    top: 10vh;
+    left: 0;
+    margin-left: 0;
+  }
+  .navbar-toggler {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; /* Adjust width as needed */
+    height: 25px; /* Adjust height as needed */
+  }
+
+  .navbar-toggler-line {
+    background-color: #333; /* Adjust line color */
+    height: 4px; /* Line thickness */
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Optional: Add hover effect */
+  .navbar-toggler:hover .navbar-toggler-line {
+    background-color: #4a90e2; /* Change color on hover */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+  }
+  .navbar-collapse {
+    background-color: #fff; /* Add background color for collapsible menu */
+    border-top: 1px solid #ddd;
+  }
+  .navbar-light {
+    background-color: #f8f9fa;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .navbar-nav .nav-link.active {
+    color: #4a90e2;
+  }
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #navbarSupportedContent {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    top: 10vh;
+    left: 0;
+    margin-left: 0;
+  }
+  .navbar-toggler {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; /* Adjust width as needed */
+    height: 25px; /* Adjust height as needed */
+  }
+
+  .navbar-toggler-line {
+    background-color: #333; /* Adjust line color */
+    height: 4px; /* Line thickness */
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Optional: Add hover effect */
+  .navbar-toggler:hover .navbar-toggler-line {
+    background-color: #4a90e2; /* Change color on hover */
+  }
+}

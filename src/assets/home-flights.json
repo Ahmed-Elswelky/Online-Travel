@@ -1,0 +1,32 @@
+[
+  {
+    "imgUrl": "../assets/images/makka-card.jpg",
+    "title": "Sacred Journey to Makkah",
+    "description": "Plan your Umrah or Hajj journey to the holy city of Makkah and experience spiritual peace."
+  },
+  {
+    "imgUrl": "./assets/images/madinah-card.jpg",
+    "title": "Visit Madinah Al Munawwarah",
+    "description": "Experience the tranquility of Madinah and visit the Prophet's Mosque for a spiritually enriching journey."
+  },
+  {
+    "imgUrl": "../assets/images/paris-card.jpg",
+    "title": "Paris Getaway",
+    "description": "Explore the romantic city of Paris with amazing flight deals."
+  },
+  {
+    "imgUrl": "../assets/images/travel-carousel-2.jpg",
+    "title": "New York Experience",
+    "description": "Book your flight to New York City, home to iconic landmarks and world-class entertainment."
+  },
+  {
+    "imgUrl": "../assets/images/Alpas-card.jpg",
+    "title": "Cozy Cabin in the Swiss Alps",
+    "description": "Enjoy a peaceful retreat in a cozy cabin, nestled in the picturesque Swiss Alps."
+  },
+  {
+    "imgUrl": "../assets/images/Bali-card.jpg",
+    "title": "Beachfront Villa in Bali",
+    "description": "Experience paradise with a beachfront villa in Bali, offering serene views and luxurious comfort."
+  }
+]
