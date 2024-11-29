@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class NavBarComponent {
 
+  closeNavbar() {
+    const navbarCollapse = document.getElementById('navbarSupportedContent');
+    if (navbarCollapse) {
+      navbarCollapse.classList.remove('show'); // Collapse the navbar
+    }
+  }
+
 }
