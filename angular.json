@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "online-travel": {
+    "travel-everywhere": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/online-travel",
+            "outputPath": "dist/travel-everywhere",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -37,7 +37,7 @@
               "node_modules/bootstrap/dist/js/bootstrap.js",
               "node_modules/chart.js/dist/chart.js"
             ],
-            "baseHref": "Online-Travel"
+            "baseHref": "Travel-Everywhere"
           },
           "configurations": {
             "production": {
@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "online-travel:build:production"
+              "browserTarget": "travel-everywhere:build:production"
             },
             "development": {
-              "browserTarget": "online-travel:build:development"
+              "browserTarget": "travel-everywhere:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "online-travel:build"
+            "browserTarget": "travel-everywhere:build"
           }
         },
         "test": {
